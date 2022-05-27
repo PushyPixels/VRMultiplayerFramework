@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2006c7a2843279e4598781ed39185dd0, type: 3}
   m_Name: EosApiKey
   m_EditorClassIdentifier: 
-  epicProductName: MirrorSandbox
+  epicProductName: PublicVRMultiplayerFrameworkSandbox
   epicProductVersion: 1.0
   epicProductId: dfd3a4613f8e4093861a490a70ed522a
   epicSandboxId: 5a0e374d0faa4618b58ca58f28bb2192
