@@ -1,3 +1,6 @@
 [submodule "Assets/Mirror"]
 	path = Assets/Mirror
 	url = git@github.com:vis2k/Mirror.git
+[submodule "Assets/EpicOnlineTransport"]
+	path = Assets/EpicOnlineTransport
+	url = git@github.com:FakeByte/EpicOnlineTransport.git
