@@ -15535,14 +15535,7 @@ GameObject:
   - component: {fileID: 6015972967641183477}
   - component: {fileID: 3357624811715499811}
   - component: {fileID: 1619379700064405070}
-  - component: {fileID: 983562250}
-  - component: {fileID: 983562249}
   - component: {fileID: -2495479022853916617}
-  - component: {fileID: 1344056484}
-  - component: {fileID: 1344056483}
-  - component: {fileID: 895824345}
-  - component: {fileID: 895824344}
-  - component: {fileID: 5744488938529295908}
   m_Layer: 31
   m_Name: NetworkPlayer
   m_TagString: Untagged
@@ -15656,8 +15649,6 @@ MonoBehaviour:
   - {fileID: 3857440468413854456}
   - {fileID: 4435387346387203426}
   - {fileID: 8868932626103406014}
-  - {fileID: 0}
-  - {fileID: 0}
 --- !u!54 &4520827800881636642
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -15782,42 +15773,6 @@ MonoBehaviour:
   followY: 1
   followZ: 1
   follower: {fileID: 9120583586398728682}
---- !u!114 &983562250
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5841054316661228322}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0f69cd0baf6dc5f4f9115f6da7b1f733, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  syncMode: 0
-  syncInterval: 0.1
-  cubeMultiplayerPrefabSlot: 2
-  triggerAxis: XRI_Right_Trigger
-  toggleAxisAlignmentButton: Fire2
-  target: {fileID: 9120583586398728682}
---- !u!114 &983562249
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5841054316661228322}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0f69cd0baf6dc5f4f9115f6da7b1f733, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  syncMode: 0
-  syncInterval: 0.1
-  cubeMultiplayerPrefabSlot: 2
-  triggerAxis: XRI_Left_Trigger
-  toggleAxisAlignmentButton: Fire2
-  target: {fileID: 2108693626513834990}
 --- !u!114 &-2495479022853916617
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15828,84 +15783,6 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4efbc54fd9d688042a8493c8efe413ae, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  syncMode: 0
-  syncInterval: 0.1
-  leftThruster: {fileID: 1344056484}
-  rightThruster: {fileID: 1344056483}
---- !u!114 &1344056484
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5841054316661228322}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 75b93c57bedfbb9409f1cf5a86c4e7fb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  syncMode: 0
-  syncInterval: 0.1
-  audioSource: {fileID: 3327668547508238490}
---- !u!114 &1344056483
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5841054316661228322}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 75b93c57bedfbb9409f1cf5a86c4e7fb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  syncMode: 0
-  syncInterval: 0.1
-  audioSource: {fileID: 7170166141230883740}
---- !u!114 &895824345
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5841054316661228322}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fbeede599b505004bae76a63bad6251b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  syncMode: 0
-  syncInterval: 0.1
-  newVolume: 0.2
-  audio: {fileID: 3327668547508238490}
---- !u!114 &895824344
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5841054316661228322}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fbeede599b505004bae76a63bad6251b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  syncMode: 0
-  syncInterval: 0.1
-  newVolume: 0.1
-  audio: {fileID: 7170166141230883740}
---- !u!114 &5744488938529295908
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5841054316661228322}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ae0fc7e5ceca1c440b7b759812c6a0cd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   syncMode: 0
@@ -21299,7 +21176,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 77e1ca8827621d042b02d87e83b30905, type: 3}
+  - {fileID: 10100, guid: 0000000000000000e000000000000000, type: 0}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
