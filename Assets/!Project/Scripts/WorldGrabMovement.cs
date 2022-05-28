@@ -8,6 +8,7 @@ public class WorldGrabMovement : MonoBehaviour
     public HandInfo leftHand;
     public HandInfo rightHand;
     public LayerMask grabbableObjectLayerMask = 0;
+    public float grabRadius = 0.07f;
     public LayerMask movementObjectLayerMask = -1;
     public float minimumMovementDistance = 0.01f;
 
@@ -75,7 +76,7 @@ public class WorldGrabMovement : MonoBehaviour
         if (Input.GetAxis(hand.gripAxis) >= 0.25f)
         {
             Collider[] colliders = Physics.OverlapSphere(hand.rigidbody.transform.position,
-                                                         hand.rigidbody.transform.lossyScale.x/2.0f,
+                                                         grabRadius,
                                                          grabbableObjectLayerMask);
             if (colliders.Length > 0 && hand.state == HandState.Empty)
             {
@@ -135,7 +136,7 @@ public class WorldGrabMovement : MonoBehaviour
 
             if (rb != null)
             {
-                rb.velocity = (hand.rigidbody.transform.position - hand.previousPostions.PeekFront()) / Time.fixedDeltaTime/(float)framesToAverageWhenThrowing;
+                rb.velocity = (hand.rigidbody.transform.position - hand.previousPostions.PeekFront()) / Time.deltaTime;
                 //rb.gameObject.SetLayerRecursively(hand.grippedObjectOriginalLayer);
             }
 
@@ -197,7 +198,7 @@ public class WorldGrabMovement : MonoBehaviour
             if (Input.GetAxis(hand.gripAxis) >= 0.25f &&
                 (hand.state == HandState.MovementGrab || // If we don't check for this, auto-grab works badly
                 Physics.CheckSphere(hand.rigidbody.transform.position,
-                                    hand.rigidbody.transform.lossyScale.x/2.0f,
+                                    grabRadius,
                                     movementObjectLayerMask)))
             {
 
