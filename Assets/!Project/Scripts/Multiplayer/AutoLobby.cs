@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using System.IO;
 using System.Collections;
 using System.Collections.Generic;
 using Epic.OnlineServices.Lobby;
@@ -84,7 +85,9 @@ public class AutoLobby : EOSLobby {
         }
         else
         {
-            CreateLobby(4, LobbyPermissionLevel.Publicadvertised, false, new AttributeData[] { new AttributeData { Key = AttributeKeys[0], Value = "DefaultLobby" }, });
+            string guidPath = Path.Combine(Application.streamingAssetsPath, "MultiplayerGUID.guid");
+            string guid = File.ReadAllText(guidPath);
+            CreateLobby(4, LobbyPermissionLevel.Publicadvertised, false, new AttributeData[] { new AttributeData { Key = AttributeKeys[0], Value = guid }, });
         }
     }
 
