@@ -93,7 +93,7 @@ public class WorldGrabMovement : MonoBehaviour
 
                     hand.grippedObjectOriginalLayer = rb.gameObject.layer;
 
-                    rb.gameObject.SetLayerRecursively(LayerMask.NameToLayer("Grabbed"));
+                    //rb.gameObject.SetLayerRecursively(LayerMask.NameToLayer("Grabbed"));
 
                     GrabAnchor grabAnchor = rb.GetComponentInChildren<GrabAnchor>();
 
@@ -136,7 +136,7 @@ public class WorldGrabMovement : MonoBehaviour
             if (rb != null)
             {
                 rb.velocity = (hand.rigidbody.transform.position - hand.previousPostions.PeekFront()) / Time.fixedDeltaTime/(float)framesToAverageWhenThrowing;
-                rb.gameObject.SetLayerRecursively(hand.grippedObjectOriginalLayer);
+                //rb.gameObject.SetLayerRecursively(hand.grippedObjectOriginalLayer);
             }
 
             hand.state = HandState.Empty;

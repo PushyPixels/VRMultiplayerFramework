@@ -3,7 +3,11 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - PlayerLeftHand
+  - PlayerRightHand
+  - NetworkLeftHand
+  - NetworkRightHand
   layers:
   - Default
   - TransparentFX
@@ -35,8 +39,8 @@ TagManager:
   - 
   - 
   - 
-  - 
-  - 
+  - Grabbable
+  - Climbable
   m_SortingLayers:
   - name: Default
     uniqueID: 0
