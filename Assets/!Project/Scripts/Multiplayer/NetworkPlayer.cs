@@ -6,6 +6,9 @@ using UnityEngine;
 
 public class NetworkPlayer : NetworkBehaviour
 {
+    public PlaySoundNet leftThruster;
+    public PlaySoundNet rightThruster;
+
     public static NetworkPlayer instance;
 
     // EnsureInit boolean
